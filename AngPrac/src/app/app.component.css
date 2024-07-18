@@ -1,0 +1,60 @@
+.Heading {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.main {
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.placeHolder {
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.green-button, .red-button {
+    padding: 8px 16px; 
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+}
+
+.green-button {
+    background-color: green;
+}
+
+.red-button {
+    background-color: red;
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo-item {
+    text-align: center;
+    margin: 10px 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px; 
+}
+
+.todo-details {
+    display: flex;
+    justify-content: space-between;
+    width: 200px; 
+}
+
+.no-data {
+    text-align: center;
+    margin-top: 20px;
+}

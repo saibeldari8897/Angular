@@ -1,0 +1,22 @@
+<h1 class="Heading">Welcome to TodoApp</h1>
+<div class="main">
+  <div class="input-container">
+    <input class="placeHolder" type="text" placeholder="Add todo" [(ngModel)]="postTitle">
+    <input class="placeHolder" type="date" [(ngModel)]="postDate">
+    <button class="placeHolder green-button" (click)="onClick(postTitle, postDate)">Add Todo</button>
+  </div>
+</div>
+<div *ngIf="array.length > 0; else noData">
+  <div class="todo-list">
+    <div *ngFor="let post of array let i=index" class="todo-item">
+      <div class="todo-details">
+        <h2>{{ post.Title }}</h2>
+        <p>{{ post.Date }}</p>
+        <button class="placeHolder red-button" (click)="onClickDel(i)" >Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template #noData>
+  <h3 class="no-data">No data is available</h3>
+</ng-template>
